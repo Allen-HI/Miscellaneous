@@ -70,50 +70,87 @@ ip addr show
 ##### 1、设置root用户可以SSH链接服务器：
 
 我们前面装系统的时候已经装了SSH服务端OpenSSH server
+
 假如我们装系统时候没装SHH服务端，我们就安装一下即可：
+
 sudo apt-get install openssh-server #安装OpenSSH server,我们在前面已经装了SSH服务,我们这里就不用再装了
+
 sudo passwd root #执行后给root设置密码,会要求先输入当前用户的密码做验证
+
 su - root #切换到root账户,并输入上面设置的root密码
+
 vi /etc/ssh/sshd_config  #修改SSH配置文件
+
 找到PermitRootLogin without-password或是PermitRootLogin prohibit-password
+
 注释掉 #PermitRootLogin without-password 或 #PermitRootLogin prohibit-password，或直接删除
+
 添加PermitRootLogin yes
+
 就是允许SSH远程登录
+
 重启SSH服务生效：
+
 service ssh restart
 
 ##### 2、给服务器配置外网IP：
 
 先用ifconfig -a看看网卡是不是eth0，如果是别的名称以下配置中的eth0要做对应修改，有的是enp1s0f0
+
 vi /etc/network/interfaces
+
 默认是：
+
 auto eth0
+
 iface eth0 inet dhcp
+
 默认是以DHCP方式配置网卡自动分配IP
 
 默认内容也有可能是：
+
 source /etc/network/interfaces.d/*
+
 # The loopback network interface
+
 auto lo
+
 iface lo inet loopback
+
 我们要将默认的#注释掉或删除
 
 我们需要修改为静态IP：
+
 auto eth0 
+
 iface eth0 inet static 
+
 address 14.17.65.109 #IP
+
 netmask 255.255.255.0 #子网
+
 gateway 14.17.65.65 #网关
+
 dns-nameservers 114.114.114.114 8.8.8.8 #这里设置了两个DNS
+
 重启网卡生效：
+
 sudo /etc/init.d/networking restart
+
 如果重启网卡报错，就有可能是修改网卡的名称引起的。这时候可以重启服务器reboot
+
 如果服务器要设置双IP呢：
+
 vi /etc/network/interfaces
+
 在该文件中再添加如下的行：
+
 auto eth0:1  
+
 iface eth0:1 inet static  
+
 address x.x.x.x  
+
 netmask x.x.x.x
 
 ##### 下面是我们服务器中设置双IP的配置信息请参考(配置文件中的网卡是enp1s0f1)：
@@ -141,10 +178,16 @@ dns-nameservers 114.114.114.114 8.8.8.8
 ##### 3、修改服务器的DNS(这里不需要操作,因为上面网卡IP配置文件中设置了DNS)：
 
 vi /etc/resolvconf/resolv.conf.d/base
+
 增加：
+
 search localdomain #如果服务器做专门的DNS服务器,可以加上这一句,如果不是就不加,一般不用加
+
 nameserver 114.114.114.114
+
 nameserver 8.8.8.8
+
 重启网络和DNS后生效：
+
 sudo /etc/init.d/networking restart
 sudo /etc/init.d/resolvconf restart
