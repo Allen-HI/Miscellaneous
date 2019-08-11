@@ -8,9 +8,9 @@ Ubuntu18.04server下载和ubuntu18.04.2安装教程,Ubuntu配置IP,DNS和设置r
 
 
 
-![Ubuntu18.10server安装教程1.png](\image\1.png)
+![Ubuntu18.10server安装教程1.png](/image/1.png)
 
-![Ubuntu18.10server安装教程2.png](\image\2.png)
+![Ubuntu18.10server安装教程2.png](/image/2.png)
 
 ![Ubuntu18.10server安装教程3.png](/image/3.png)
 
@@ -119,14 +119,23 @@ netmask x.x.x.x
 ##### 下面是我们服务器中设置双IP的配置信息请参考(配置文件中的网卡是enp1s0f1)：
 
 auto enp1s0f1
+
 iface enp1s0f1 inet static
+
 address 14.17.65.84
+
 netmask 255.255.255.192
+
 gateway 14.17.65.65
+
 auto enp1s0f1:1
+
 iface enp1s0f1:1 inet static
+
 address 114.119.116.59
+
 netmask 255.255.255.0
+
 dns-nameservers 114.114.114.114 8.8.8.8
 
 ##### 3、修改服务器的DNS(这里不需要操作,因为上面网卡IP配置文件中设置了DNS)：
