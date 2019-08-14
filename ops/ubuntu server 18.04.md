@@ -8,21 +8,21 @@ Ubuntu18.04server下载和ubuntu18.04.2安装教程,Ubuntu配置IP,DNS和设置r
 
 
 
-![Ubuntu18.10server安装教程1.png](/image/1.png)
+![Ubuntu18.10server安装教程1.png](image/1.png)
 
-![Ubuntu18.10server安装教程2.png](/image/2.png)
+![Ubuntu18.10server安装教程2.png](image/2.png)
 
-![Ubuntu18.10server安装教程3.png](/image/3.png)
+![Ubuntu18.10server安装教程3.png](image/3.png)
 
-![Ubuntu18.10server安装教程4.png](/image/4.png)
+![Ubuntu18.10server安装教程4.png](image/4.png)
 
-![Ubuntu18.10server安装教程5.png](/image/5.png)
+![Ubuntu18.10server安装教程5.png](image/5.png)
 
-![Ubuntu18.10server安装教程6.png](/image/6.png)
+![Ubuntu18.10server安装教程6.png](image/6.png)
 
-![Ubuntu18.10server安装教程7.png](/image/7.png)
+![Ubuntu18.10server安装教程7.png](image/7.png)
 
-![Ubuntu18.10server安装教程8.png](/image/8.png)
+![Ubuntu18.10server安装教程8.png](image/8.png)
 
 
 
@@ -31,35 +31,35 @@ Ubuntu18.04server下载和ubuntu18.04.2安装教程,Ubuntu配置IP,DNS和设置r
 
 
 
-![Ubuntu18.10server安装教程9.png](/image/9.png)
+![Ubuntu18.10server安装教程9.png](image/9.png)
 
-![Ubuntu18.10server安装教程10.png](/image/10.png)
+![Ubuntu18.10server安装教程10.png](image/10.png)
 
-![Ubuntu18.10server安装教程11.png](/image/11.png)
+![Ubuntu18.10server安装教程11.png](image/11.png)
 
-![Ubuntu18.10server安装教程12.png](/image/12.png)
+![Ubuntu18.10server安装教程12.png](image/12.png)
 
-![Ubuntu18.10server安装教程13.png](/image/13.png)
+![Ubuntu18.10server安装教程13.png](image/13.png)
 
-![Ubuntu18.10server安装教程14.png](/image/14.png)
+![Ubuntu18.10server安装教程14.png](image/14.png)
 
-![Ubuntu18.10server安装教程15.png](/image/15.png)
+![Ubuntu18.10server安装教程15.png](image/15.png)
 
-![Ubuntu18.10server安装教程16.png](/image/16.png)
+![Ubuntu18.10server安装教程16.png](image/16.png)
 
-![Ubuntu18.10server安装教程17.png](/image/17.png)
+![Ubuntu18.10server安装教程17.png](image/17.png)
 
-![Ubuntu18.04建立一个普通用户.png](/image/18.png)
+![Ubuntu18.04建立一个普通用户.png](image/18.png)
 
-![Ubuntu18.04安装SSH服务.png](/image/19.png)
+![Ubuntu18.04安装SSH服务.png](image/19.png)
 
-![Ubuntu18.10server安装教程19.png](/image/20.png)
+![Ubuntu18.10server安装教程19.png](image/20.png)
 
-![Ubuntu18.10server安装教程20.png](/image/21.png)
+![Ubuntu18.10server安装教程20.png](image/21.png)
 
-![Ubuntu18.10server安装教程21.png](/image/22.png)
+![Ubuntu18.10server安装教程21.png](image/22.png)
 
-![Ubuntu18.04到达登陆界面.png](/image/23.png)
+![Ubuntu18.04到达登陆界面.png](image/23.png)
 
 ### 查看网卡信息命令：
 
